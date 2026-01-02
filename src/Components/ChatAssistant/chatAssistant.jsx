@@ -34,7 +34,7 @@ function ChatAssistant() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL || "http://localhost:8080"}/api/chat`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL || "https://protien-backend-1.onrender.com"}/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
